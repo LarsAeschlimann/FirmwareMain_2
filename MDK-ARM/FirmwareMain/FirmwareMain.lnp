@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"firmwaremain\system_stm32f1xx.o"
+"firmwaremain\stm32f1xx_hal_cortex.o"
+"firmwaremain\stm32f1xx_hal_pwr.o"
+"firmwaremain\stm32f1xx_hal_gpio.o"
+"firmwaremain\stm32f1xx_hal_flash.o"
+"firmwaremain\stm32f1xx_hal_gpio_ex.o"
+"firmwaremain\stm32f1xx_hal_dma.o"
+"firmwaremain\stm32f1xx_hal_flash_ex.o"
+"firmwaremain\stm32f1xx_hal_rcc.o"
+"firmwaremain\stm32f1xx_hal.o"
+"firmwaremain\stm32f1xx_hal_rcc_ex.o"
+"firmwaremain\stm32f1xx_hal_tim_ex.o"
+"firmwaremain\stm32f1xx_hal_tim.o"
+"firmwaremain\stm32f1xx_hal_uart.o"
+"firmwaremain\stm32f1xx_it.o"
+"firmwaremain\stm32f1xx_hal_msp.o"
+"firmwaremain\startup_stm32f100xe.o"
+"firmwaremain\main.o"
+"firmwaremain\rgb_led.o"
+"firmwaremain\shiftregister.o"
+--library_type=microlib --strict --scatter "FirmwareMain\FirmwareMain.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "FirmwareMain.map" -o FirmwareMain\FirmwareMain.axf
